@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 ########################################################################
 # Filename    : SenseLED.py
-# Description : Control led with infrared Motion sensor.
+# Description : Control led with infrared Motion sensor. austin
 # auther      : www.freenove.com
 # modification: 2019/12/28hgh
 ########################################################################
