@@ -10,7 +10,7 @@ import time
 
 ledPin = 15       # define ledPin
 sensorPin = 13    # define sensorPin
-buzzerPin = 11    # define buzzerPin
+buzzerPin = 32    # define buzzerPin
 GPIO.setmode(GPIO.BOARD)        # use PHYSICAL GPIO Numbering
 GPIO.setup(ledPin, GPIO.OUT)    # set ledPin to OUTPUT mode
 GPIO.setup(buzzerPin, GPIO.OUT) # set buzzerPin to OUTPUT mode
