@@ -9,7 +9,7 @@ import RPi.GPIO as GPIO
 import time
 
 ledPin = 15       # define ledPin
-sensorPin = 13    # define sensorPin
+sensorPin = 29    # define sensorPin
 buzzerPin = 32    # define buzzerPin
 GPIO.setmode(GPIO.BOARD)        # use PHYSICAL GPIO Numbering
 GPIO.setup(ledPin, GPIO.OUT)    # set ledPin to OUTPUT mode
@@ -25,15 +25,13 @@ def loop():
             GPIO.output(ledPin,GPIO.LOW) # turn off led
             print ('led turned off <<<')
         if GPIO.input(sensorPin)==GPIO.LOW:
-            GPIO.output(buzzerPin,GPIO.HIGH) #turn on buzzer
+            GPIO.output(buzzerPin,GPIO.HIGH) #turn off buzzer
             print ('buzzer turned off >>>')
         else :
-            GPIO.output(buzzerPin,GPIO.LOW) # turn off buzzer
+            GPIO.output(buzzerPin,GPIO.LOW) # turn on buzzer
             print ('buzzer turned on <<<')
 
         time.sleep(1)
 
-
 if __name__ == "__main__":
     loop()
-
